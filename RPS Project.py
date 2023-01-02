@@ -11,7 +11,7 @@ def game(user_pick, computer_pick, os, user_name, random):
     elif user_pick.title() == "S":
         user_pick = "scissors"
 
-	# Response for an unknown input
+    # Response for an unknown input
 	
     else: 
         os.system('cls')
@@ -21,11 +21,11 @@ def game(user_pick, computer_pick, os, user_name, random):
         user_pick = input("Enter (R)ock, (P)aper, or (S)cissors: ")
         game(user_pick, computer_pick, os, user_name, random)
 
-	# Shows what the player chose
+    # Shows what the player chose
 	
     print("\n" + user_name + " chose " + str(user_pick) + "!")
 	
-	# Sets the computer's number choice to rock, paper, or scissors 
+    # Sets the computer's number choice to rock, paper, or scissors 
 	
     if computer_pick == 1:
         computer_pick = "rock"
